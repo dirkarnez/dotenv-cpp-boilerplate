@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.19)
 
 project(dotenv-cpp-boilerplate)
 
+# version is only declared in header file, no cmake declaration is made
 find_package(laserpants_dotenv REQUIRED PATHS ${DOTENV_CPP_ROOT})
 
 if (laserpants_dotenv_FOUND)
